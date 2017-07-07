@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source_files = "SDK"
   s.ios.vendored_library = "SDK/libPcrEngine.a"
   s.frameworks = "SystemConfiguration", "MessageUI", "AVFoundation", "MobileCoreServices"
-  s.libraries = "libz", "libxml2", "libiconv"
+  s.libraries = "z", "xml2", "iconv"
   s.requires_arc = true
 
 end
