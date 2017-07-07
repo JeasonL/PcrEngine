@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "6.0"
   s.source       = { :git => "https://github.com/JeasonL/PcrEngine.git", :tag => s.version }
   s.source_files = "SDK"
-  s.ios.vendored_library = "SDK/libPcrEngine.a"
+  s.resource     = "SDK/*.bundle"
+  s.ios.vendored_library = "SDK/*.a"
   s.frameworks = "SystemConfiguration", "MessageUI", "AVFoundation", "MobileCoreServices"
   s.libraries = "z", "xml2", "iconv"
   s.requires_arc = true
